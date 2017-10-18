@@ -32,6 +32,10 @@
     <%= yield %>
   </body>
   <script>
-  getLocation()
+  $.ajax({
+      url : "search/index"
+      type : "post",
+      data : { lat_long: getLocation() }
+  });
   </script>
 </html>
