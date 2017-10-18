@@ -32,10 +32,28 @@
     <%= yield %>
   </body>
   <script>
+  var lat;
+  var lng;
+
+Gmaps.map.geolocationSuccess = function(){
+    if(Gmaps.map.callback){
+      lng = Gmaps.map.userLocation.lng();
+      lat = Gmaps.map.userLocation.lat();
+      Gmaps.map.addMarkers([{
+          "lng": lng,
+          "lat": lat,
+          "picture": "http://gmaps-samples.googlecode.com/svn/trunk/markers/pink/blank.png",
+          "width": "37",
+          "height": "34"
+      }]);
+
   $.ajax({
-      url : "search/index"
-      type : "post",
-      data : { lat_long: getLocation() }
-  });
+          type: 'GET',
+          url: 'search/index',
+          dataType: 'json',
+          data: "latitude=" + lat + "&longitude=" + lng,
+        });
+    }
+  };
   </script>
 </html>

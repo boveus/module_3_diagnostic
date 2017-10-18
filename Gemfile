@@ -20,6 +20,7 @@ gem 'httparty'
 gem 'faraday'
 gem 'figaro'
 gem 'capybara'
+gem 'responders', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'

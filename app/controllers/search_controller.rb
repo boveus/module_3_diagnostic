@@ -5,6 +5,13 @@ class SearchController < ApplicationController
     binding.pry
   end
 
+  # @events = Event.near(params[:latitude], params[:longitude],2)
+
+  respond_to do |format|
+    format.html # index.html.erb
+    format.js {render json: @events, content_type: 'text/json' }
+  end
+
   private def zip_code_params
     params.permit(:q)
   end
