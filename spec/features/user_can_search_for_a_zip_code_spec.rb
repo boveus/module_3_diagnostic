@@ -15,8 +15,11 @@ feature "User can search for results based on a zip code" do
     expect(page).to have_content('Address: 1700 Sherman Street')
     expect(page).to have_content('Fuel type(s): ELEC')
     #fuel type code for now, add a hash to englishfy it later
-    expect(page).to have_content('Distance: ')
     expect(page).to have_content("Access Times: MO: 12:00am-12:00am; TU: 12:00am-12:00am; WE: 12:00am-12:00am; TH: 12:00am-12:00am; FR: 12:00am-12:00am; SA: 12:00am-12:00am; SU: 12:00am-12:00am")
+
+    # expect(page).to have_content('distance')
+    #compute distance later if time
+
     end
   end
 end
