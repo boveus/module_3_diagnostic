@@ -19,7 +19,6 @@ feature "User can search for results based on a zip code" do
 
     # expect(page).to have_content('distance')
     #compute distance later if time
-
     end
   end
 end
