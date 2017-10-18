@@ -18,7 +18,7 @@
         <%= link_to "AltFuelFinder", root_path, class: "navbar-brand" %>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav" id="Searchfield">
           <%= form_tag :search, method: :get, class: "form-inline" do %>
             <div class="form-group search-field">
               <%= text_field_tag :q, "Search by zip...", class: "form-control" %>
