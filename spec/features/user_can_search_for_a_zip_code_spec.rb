@@ -8,8 +8,17 @@ feature "User can search for results based on a zip code" do
     visit "/"
     fill_in 'q', :with => '80203'
     click_on "Locate"
+
     expect(current_url).to eq("http://www.example.com/search?utf8=%E2%9C%93&q=80203&commit=Locate")
-    # expect(page).to have_current_path(search_path(q: '80203'))
+
+    expect(page).to have_content('a closest station')
+    expect(page).to have_content('another close station name')
+    expect(page).to have_content('type')
+    expect(page).to have_content('station name')
+    expect(page).to have_content('station address')
+    expect(page).to have_content('station fuel type')
+    expect(page).to have_content('station distance')
+    expect(page).to have_content('station access times')
     end
   end
 end
