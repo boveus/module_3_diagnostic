@@ -23,6 +23,8 @@ feature "User can search for results based on a zip code" do
   end
 end
 
+
+# Request URL https://api.data.gov/nrel/alt-fuel-stations/v1.json?limit=10&api_key=1bTOTtAtN4Sqpj7tRr8SujixziNYTs1S5ReC0u9K
 # As a user
 # When I visit "/"
 # And I fill in the search form with 80203
