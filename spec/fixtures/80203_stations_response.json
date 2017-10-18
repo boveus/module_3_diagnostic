@@ -1,0 +1,86 @@
+{
+    "station_locator_url": "http://www.afdc.energy.gov/afdc/locator/stations/",
+    "total_results": 1,
+    "station_counts": {
+        "total": 4,
+        "fuels": {
+            "E85": {
+                "total": 0
+            },
+            "ELEC": {
+                "total": 4,
+                "stations": {
+                    "total": 1
+                }
+            },
+            "HY": {
+                "total": 0
+            },
+            "LNG": {
+                "total": 0
+            },
+            "BD": {
+                "total": 0
+            },
+            "CNG": {
+                "total": 0
+            },
+            "LPG": {
+                "total": 0
+            }
+        }
+    },
+    "fuel_stations": [
+        {
+            "access_days_time": "MO: 12:00am-12:00am; TU: 12:00am-12:00am; WE: 12:00am-12:00am; TH: 12:00am-12:00am; FR: 12:00am-12:00am; SA: 12:00am-12:00am; SU: 12:00am-12:00am",
+            "cards_accepted": null,
+            "date_last_confirmed": "2017-10-18",
+            "expected_date": null,
+            "fuel_type_code": "ELEC",
+            "id": 80053,
+            "groups_with_access_code": "Public - Card key at all times",
+            "open_date": null,
+            "owner_type_code": null,
+            "status_code": "E",
+            "station_name": "Wells Fargo Center",
+            "station_phone": "800-663-5633",
+            "updated_at": "2017-10-18T07:55:03Z",
+            "geocode_status": "GPS",
+            "latitude": 39.743633,
+            "longitude": -104.9854667,
+            "city": "Denver",
+            "intersection_directions": "The stations are on level 2 of the garage.\nThe stations are on level 2 of the garage.\nThe stations are on level 2 of the garage.\nThe stations are on level 2 of the garage.",
+            "plus4": null,
+            "state": "CO",
+            "street_address": "1700 Sherman Street",
+            "zip": "80203",
+            "bd_blends": null,
+            "e85_blender_pump": null,
+            "ev_connector_types": [
+                "J1772"
+            ],
+            "ev_dc_fast_num": null,
+            "ev_level1_evse_num": null,
+            "ev_level2_evse_num": 4,
+            "ev_network": "SemaCharge Network",
+            "ev_network_web": "http://www.semacharge.com/",
+            "ev_other_evse": null,
+            "hy_status_link": null,
+            "lpg_primary": null,
+            "ng_fill_type_code": null,
+            "ng_psi": null,
+            "ng_vehicle_class": null,
+            "ev_network_ids": {
+                "station": [
+                    "1620"
+                ],
+                "posts": [
+                    "4405",
+                    "4406",
+                    "4407",
+                    "4408"
+                ]
+            }
+        }
+    ]
+}
